@@ -4,7 +4,7 @@ import Home from '../components/Home';
 import Cart from '../components/Cart';
 
 
-export default function Router() {
+export default function Routes() {
     return (
        <Switch>
            <Route exact path='/' component={Home} />

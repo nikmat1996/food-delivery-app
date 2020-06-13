@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
-import Router from '../routes/router'
-import Navbar from './Navbar'
+import Header from './Header'
+import Routes from '../routes/Routes'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class FoodDeliveryApp extends Component {
     render() {
         return (
             <div>
-                Food Delivery App
-                <Navbar />
-                <Router/>
+                <Header />
+                <Routes/>
             </div>
         )
     }
