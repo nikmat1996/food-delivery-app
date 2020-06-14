@@ -4,7 +4,7 @@ import { Navbar, Nav} from 'react-bootstrap'
 import { connect } from 'react-redux'
 
 function Header(props) {
-    const { userLoggedIn, adminLoggedIn } = props
+    const { userLoggedIn, adminLoggedIn, cart } = props
     
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -15,7 +15,7 @@ function Header(props) {
                 {!adminLoggedIn? null :<Link className="mr-4 nav-link" to="/allDetails">S T A T S</Link>}
                 {!adminLoggedIn? null :<Link className="mr-4 nav-link" to="/add">A D D</Link>}
                 {!userLoggedIn? null :<Link className="mr-4 nav-link" to="/orders">O R D E R S</Link>}
-                {adminLoggedIn? null :<Link className="mr-4 nav-link" to="/cart">C A R T</Link>}
+                {adminLoggedIn? null :<Link className="mr-4 nav-link" to="/cart">{cart.length ? `C A R T + ${cart.length}` : 'C A R T'}</Link>}
                 <Link className=" nav-link" to="/login">{userLoggedIn || adminLoggedIn ?'L O G O U T' :'L O G I N'}</Link>
             </Nav>
             </Navbar.Collapse>
@@ -26,7 +26,8 @@ function Header(props) {
 
 const mapStateToProps = state => ({
     adminLoggedIn: state.adminLoggedIn,
-    userLoggedIn: state.userLoggedIn
+    userLoggedIn: state.userLoggedIn,
+    cart: state.cart
 })
 
 export default connect(mapStateToProps,null)(Header)

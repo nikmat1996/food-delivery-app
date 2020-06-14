@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default class FoodDeliveryApp extends Component {
     render() {
         return (
-            <div style={{"background-color":"#f2e9eb"}}>
+            <div style={{"backgroundColor":"#f2e9eb"}}>
                 <Header />
                 <Routes/>
             </div>

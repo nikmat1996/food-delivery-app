@@ -10,16 +10,25 @@ const initState = {
     adminLoggedIn: false,
     cart: [],
     userDetails: userdetails,
-    carouselData: carouselData
+    carouselData: carouselData,
+    selected: {}
 }
 
-
+console.log(initState)
 
 const reducer = (state = initState , { type, payload }) => {
     switch (type) {
 
         case ADD_TO_CART:
-            return { ...state }
+            if(state.selected[payload])
+                state.selected[payload]++
+            else
+                state.selected[payload] = 1
+            return { 
+                ...state,
+                cart: [...state.cart,state.data.find(item => item.id === payload)],
+                selected:{...state.selected}
+            }
 
         case REMOVE_FORM_CART:
             return { ...state }
