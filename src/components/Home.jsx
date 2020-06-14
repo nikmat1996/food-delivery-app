@@ -3,13 +3,15 @@ import { connect } from 'react-redux'
 import { Carousel, Card, ListGroup,
          ListGroupItem, Button, Badge,
          Container, Col, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import "./Home.css"
 
 function Home(props) {
     const { data, carouselData } = props
     return (
         <Container>
             
-            <Carousel>
+            <Carousel className="mt-3 mb-3">
                 {carouselData.map(item => (
                 
                     <Carousel.Item key={item.p}>
@@ -30,18 +32,18 @@ function Home(props) {
             
             <Row>
                 {data.map(item => (
-                <Col xs={12} md={6} lg={4} className="p-2 mr-0">
-                    <Card className="" style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+                <Col xs={12} md={6} lg={4} className=" p-2 mr-0">
+                    <Card className=" productCard" style={{ width: '21rem' }}>
+                        <Card.Img variant="top" src={item.img} />
                     
                         <ListGroup className="list-group-flush text-center">
-                        <ListGroupItem>{item.food_name.toUpperCase()}<Badge className="ml-2" variant="secondary">{item.rating}<i className="fas fa-star ml-1"></i></Badge></ListGroupItem>
-                        <ListGroupItem>Rs {item.price}</ListGroupItem>
+                        <ListGroupItem>{item.food_name.toUpperCase()}<Badge className="ml-2" variant="secondary">{item.rating}<i class="far fa-star ml-1"></i></Badge></ListGroupItem>
+                        <ListGroupItem><i class="fas fa-rupee-sign"></i> {item.price}</ListGroupItem>
                     
                         </ListGroup>
-                        <Card.Body>
-                        <Button className="mr-3 text-"variant="secondary">Add to Cart</Button>
-                        <Card.Link className="ml-auto"href="#">Show Restaurant</Card.Link>
+                        <Card.Body className="px-0 text-center">
+                        <Button className="mr-3"variant="secondary">Add to Cart</Button>
+                        <Link className="ml-auto text-danger" to={`/${item.restaurant_name}`}>{item.restaurant_name.toUpperCase()}</Link>
                         </Card.Body>
                     </Card>
                 </Col>

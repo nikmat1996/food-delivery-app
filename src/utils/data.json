@@ -3,7 +3,8 @@
     {
         "id": 1,
         "restaurant_name": "KFC",
-        "food_name":"Burger",
+        "food_name":"B u r g e r",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 4.5,
         "price": 120,
         "payment_methods": {
@@ -14,7 +15,8 @@
     },{
         "id": 30,
         "restaurant_name": "Saranava's",
-        "food_name":"Aloo Gobi",
+        "food_name":"A l o o  G o b i",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 4.3,
         "price": 69,
         "payment_methods": {
@@ -25,7 +27,8 @@
     },{
         "id": 9,
         "restaurant_name": "Subway",
-        "food_name":"Sandwich",
+        "food_name":"S a n d w i c h",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 4.2,
         "price": 220,
         "payment_methods": {
@@ -36,7 +39,8 @@
     },{
         "id": 17,
         "restaurant_name": "Aaryas",
-        "food_name":"Masala Dosa",
+        "food_name":"M a s a l a D o s a",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 3.5,
         "price": 69,
         "payment_methods": {
@@ -47,7 +51,8 @@
     },{
         "id": 21,
         "restaurant_name": "Pizza Hut",
-        "food_name":"Pizza",
+        "food_name":"P i z z a",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 3,
         "price": 149,
         "payment_methods": {
@@ -58,7 +63,8 @@
     },{
         "id": 15,
         "restaurant_name": "Mandi House",
-        "food_name":"Mandi",
+        "food_name":"M a n d i",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 5,
         "price": 300,
         "payment_methods": {
@@ -69,7 +75,8 @@
     },{
         "id": 7,
         "restaurant_name": "Burger King",
-        "food_name":"Burger",
+        "food_name":"B u r g e r",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 3.2,
         "price": 100,
         "payment_methods": {
@@ -80,7 +87,8 @@
     },{
         "id": 8,
         "restaurant_name": "KFC",
-        "food_name":"Sandwich",
+        "food_name":"S a n d w i c h",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 4.5,
         "price": 130,
         "payment_methods": {
@@ -91,7 +99,8 @@
     },{
         "id": 26,
         "restaurant_name": "Saranava's",
-        "food_name":"Biriyani",
+        "food_name":"B i r i y a n i",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 4.3,
         "price": 135,
         "payment_methods": {
@@ -102,7 +111,8 @@
     },{
         "id": 2,
         "restaurant_name": "Subway",
-        "food_name":"Burger",
+        "food_name":"B u r g e r",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 4.2,
         "price": 160,
         "payment_methods": {
@@ -113,7 +123,8 @@
     },{
         "id": 10,
         "restaurant_name": "Starbucks",
-        "food_name":"Sandwich",
+        "food_name":"S a n d w i c h",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 4.6,
         "price": 190,
         "payment_methods": {
@@ -124,7 +135,8 @@
     },{
         "id": 4,
         "restaurant_name": "Se7en",
-        "food_name":"Burger",
+        "food_name":"B u r g e r",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 3.9,
         "price": 65,
         "payment_methods": {
@@ -135,7 +147,8 @@
     },{
         "id": 12,
         "restaurant_name": "Chic Fil a",
-        "food_name":"Sandwich",
+        "food_name":"S a n d w i c h",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 2.9,
         "price": 149,
         "payment_methods": {
@@ -146,7 +159,8 @@
     },{
         "id": 25,
         "restaurant_name": "Meridian",
-        "food_name":"Biriyani",
+        "food_name":"B i r i y a n i",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 3.8,
         "price": 599,
         "payment_methods": {
@@ -157,7 +171,8 @@
     },{
         "id": 14,
         "restaurant_name": "Burger King",
-        "food_name":"Sandwich",
+        "food_name":"S a n d w i c h",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 3.2,
         "price": 165,
         "payment_methods": {
@@ -167,8 +182,9 @@
         "costForTwo": 200
     },{
         "id": 16,
-        "restaurant_name": "Indian Coffee House",
-        "food_name":"Masala Dosa",
+        "restaurant_name": "Coffee House",
+        "food_name":"M a s a l a D o s a",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 4.6,
         "price": 55,
         "payment_methods": {
@@ -179,7 +195,8 @@
     },{
         "id": 3,
         "restaurant_name": "Starbucks",
-        "food_name":"Burger",
+        "food_name":"B u r g e r",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 4.6,
         "price": 160,
         "payment_methods": {
@@ -189,8 +206,9 @@
         "costForTwo": 600
     },{
         "id": 18,
-        "restaurant_name": "Indian Coffee House",
-        "food_name":"Biriyani",
+        "restaurant_name": "Coffee House",
+        "food_name":"B i r i y a n i",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 4.6,
         "price": 110,
         "payment_methods": {
@@ -201,7 +219,8 @@
     },{
         "id": 5,
         "restaurant_name": "Chic Fil a",
-        "food_name":"Burger",
+        "food_name":"B u r g e r",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 2.9,
         "price": 90,
         "payment_methods": {
@@ -212,7 +231,8 @@
     },{
         "id": 19,
         "restaurant_name": "Aaryas",
-        "food_name":"Biriyani",
+        "food_name":"B i r i y a n i",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 3.5,
         "price": 129,
         "payment_methods": {
@@ -223,7 +243,8 @@
     },{
         "id": 20,
         "restaurant_name": "Domino's",
-        "food_name":"Pizza",
+        "food_name":"P i z z a",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 2.5,
         "price": 159,
         "payment_methods": {
@@ -234,7 +255,8 @@
     },{
         "id": 22,
         "restaurant_name": "Domino's",
-        "food_name":"Burger",
+        "food_name":"B u r g e r",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 2.5,
         "price": 75,
         "payment_methods": {
@@ -245,7 +267,8 @@
     },{
         "id": 31,
         "restaurant_name": "Worst",
-        "food_name":"Aloo Gobi",
+        "food_name":"A l o o  G o b i",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 2.2,
         "price": 29,
         "payment_methods": {
@@ -256,7 +279,8 @@
     },{
         "id": 23,
         "restaurant_name": "Pizza Hut",
-        "food_name":"Burger",
+        "food_name":"B u r g e r",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 3,
         "price": 69,
         "payment_methods": {
@@ -267,7 +291,8 @@
     },{
         "id": 24,
         "restaurant_name": "Taj",
-        "food_name":"Biriyani",
+        "food_name":"B i r i y a n i",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 4.5,
         "price": 899,
         "payment_methods": {
@@ -278,7 +303,8 @@
     },{
         "id": 11,
         "restaurant_name": "Se7en",
-        "food_name":"Sandwich",
+        "food_name":"S a n d w i c h",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 3.9,
         "price": 130,
         "payment_methods": {
@@ -289,7 +315,8 @@
     },{
         "id": 27,
         "restaurant_name": "Worst",
-        "food_name":"Biriyani",
+        "food_name":"B i r i y a n i",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 2.2,
         "price": 45,
         "payment_methods": {
@@ -300,7 +327,8 @@
     },{
         "id": 28,
         "restaurant_name": "Taj",
-        "food_name":"Aloo Gobi",
+        "food_name":"A l o o  G o b i",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 4.5,
         "price": 750,
         "payment_methods": {
@@ -311,7 +339,8 @@
     },{
         "id": 13,
         "restaurant_name": "McDonald's",
-        "food_name":"Sandwich",
+        "food_name":"S a n d w i c h",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 3.8,
         "price": 129,
         "payment_methods": {
@@ -322,7 +351,8 @@
     },{
         "id": 29,
         "restaurant_name": "Meridian",
-        "food_name":"Aloo Gobi",
+        "food_name":"A l o o  G o b i",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 3.8,
         "price": 499,
         "payment_methods": {
@@ -333,7 +363,8 @@
     },{
         "id": 6,
         "restaurant_name": "McDonald's",
-        "food_name":"Burger",
+        "food_name":"B u r g e r",
+        "img": "https://via.placeholder.com/130x80",
         "rating": 3.8,
         "price": 75,
         "payment_methods": {

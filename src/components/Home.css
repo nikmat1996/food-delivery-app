@@ -1,0 +1,13 @@
+.productCard{
+    margin-right: 0;
+    margin-left: 0;
+    margin: auto;
+    margin-bottom: 2em;
+    border: 2px solid red;
+    border-radius: 10%;
+}
+.d-block, .w-100{
+    border-radius: 1%;
+    height: 60vh;
+}
+/* .productCard */
