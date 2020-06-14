@@ -1,14 +1,16 @@
 import { ADD_TO_CART, REMOVE_FORM_CART, LOG_OUT, LOG_ADMIN_IN, LOG_USER_IN } from "./actionType";
 
 import userdetails from '../utils/userdetails.json'
-
+import data from "../utils/data.json";
+import carouselData from "../utils/carouselData.json";
 
 const initState = {
-    data: [],
+    data: data,
     userLoggedIn: false,
     adminLoggedIn: false,
     cart: [],
-    userDetails: userdetails
+    userDetails: userdetails,
+    carouselData: carouselData
 }
 
 

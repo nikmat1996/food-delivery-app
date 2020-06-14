@@ -39,9 +39,7 @@ class Login extends Component {
             this.setState({
                 invalid: true
             })
-        
     }
-
 
     handleChange = e => {
         this.setState({
@@ -79,7 +77,7 @@ class Login extends Component {
                         Login
                     </button>
                 </form>
-                {this.state.invalid? <h5 className='text-danger'>INVALID CREDENTIALS</h5> : null}
+                {this.state.invalid && <h5 className='text-danger'>INVALID CREDENTIALS</h5>}
             </>
         )
     }

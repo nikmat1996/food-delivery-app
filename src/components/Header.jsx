@@ -8,15 +8,15 @@ function Header(props) {
     
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Navbar.Brand><Link className="ml-5 nav-link text-secondary" to="/">FOOD DELIVERY APP</Link></Navbar.Brand>
+            <Navbar.Brand><Link className=" nav-link text-secondary" to="/">FOOD DELIVERY APP</Link></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ml-auto">
-                {!adminLoggedIn? null :<Link className="mr-4 nav-link" to="/allDetails">STATS</Link>}
-                {!adminLoggedIn? null :<Link className="mr-4 nav-link" to="/add">ADD RESTAURANT</Link>}
-                {!userLoggedIn? null :<Link className="mr-4 nav-link" to="/orders">ORDERS</Link>}
-                {adminLoggedIn? null :<Link className="mr-4 nav-link" to="/cart">CART</Link>}
-                <Link className="mr-5 nav-link" to="/login">{userLoggedIn || adminLoggedIn ?'LOGOUT' :'LOGIN'}</Link>
+                {!adminLoggedIn? null :<Link className="mr-4 nav-link" to="/allDetails">S T A T S</Link>}
+                {!adminLoggedIn? null :<Link className="mr-4 nav-link" to="/add">A D D</Link>}
+                {!userLoggedIn? null :<Link className="mr-4 nav-link" to="/orders">O R D E R S</Link>}
+                {adminLoggedIn? null :<Link className="mr-4 nav-link" to="/cart">C A R T</Link>}
+                <Link className=" nav-link" to="/login">{userLoggedIn || adminLoggedIn ?'L O G O U T' :'L O G I N'}</Link>
             </Nav>
             </Navbar.Collapse>
         </Navbar>

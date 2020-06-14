@@ -1,0 +1,345 @@
+ 
+[
+    {
+        "id": 1,
+        "restaurant_name": "KFC",
+        "food_name":"Burger",
+        "rating": 4.5,
+        "price": 120,
+        "payment_methods": {
+            "card": true,
+            "cash": true
+        },
+        "costForTwo": 400
+    },{
+        "id": 30,
+        "restaurant_name": "Saranava's",
+        "food_name":"Aloo Gobi",
+        "rating": 4.3,
+        "price": 69,
+        "payment_methods": {
+            "card": true,
+            "cash": true
+        },
+        "costForTwo": 300
+    },{
+        "id": 9,
+        "restaurant_name": "Subway",
+        "food_name":"Sandwich",
+        "rating": 4.2,
+        "price": 220,
+        "payment_methods": {
+            "card": true,
+            "cash": true
+        },
+        "costForTwo": 500
+    },{
+        "id": 17,
+        "restaurant_name": "Aaryas",
+        "food_name":"Masala Dosa",
+        "rating": 3.5,
+        "price": 69,
+        "payment_methods": {
+            "card": false,
+            "cash": true
+        },
+        "costForTwo": 250
+    },{
+        "id": 21,
+        "restaurant_name": "Pizza Hut",
+        "food_name":"Pizza",
+        "rating": 3,
+        "price": 149,
+        "payment_methods": {
+            "card": true,
+            "cash": true
+        },
+        "costForTwo": 300
+    },{
+        "id": 15,
+        "restaurant_name": "Mandi House",
+        "food_name":"Mandi",
+        "rating": 5,
+        "price": 300,
+        "payment_methods": {
+            "card": false,
+            "cash": true
+        },
+        "costForTwo": 550
+    },{
+        "id": 7,
+        "restaurant_name": "Burger King",
+        "food_name":"Burger",
+        "rating": 3.2,
+        "price": 100,
+        "payment_methods": {
+            "card": true,
+            "cash": true
+        },
+        "costForTwo": 200
+    },{
+        "id": 8,
+        "restaurant_name": "KFC",
+        "food_name":"Sandwich",
+        "rating": 4.5,
+        "price": 130,
+        "payment_methods": {
+            "card": true,
+            "cash": true
+        },
+        "costForTwo": 400
+    },{
+        "id": 26,
+        "restaurant_name": "Saranava's",
+        "food_name":"Biriyani",
+        "rating": 4.3,
+        "price": 135,
+        "payment_methods": {
+            "card": true,
+            "cash": true
+        },
+        "costForTwo": 300
+    },{
+        "id": 2,
+        "restaurant_name": "Subway",
+        "food_name":"Burger",
+        "rating": 4.2,
+        "price": 160,
+        "payment_methods": {
+            "card": true,
+            "cash": true
+        },
+        "costForTwo": 500
+    },{
+        "id": 10,
+        "restaurant_name": "Starbucks",
+        "food_name":"Sandwich",
+        "rating": 4.6,
+        "price": 190,
+        "payment_methods": {
+            "card": true,
+            "cash": false
+        },
+        "costForTwo": 600
+    },{
+        "id": 4,
+        "restaurant_name": "Se7en",
+        "food_name":"Burger",
+        "rating": 3.9,
+        "price": 65,
+        "payment_methods": {
+            "card": true,
+            "cash": false
+        },
+        "costForTwo": 350
+    },{
+        "id": 12,
+        "restaurant_name": "Chic Fil a",
+        "food_name":"Sandwich",
+        "rating": 2.9,
+        "price": 149,
+        "payment_methods": {
+            "card": true,
+            "cash": false
+        },
+        "costForTwo": 300
+    },{
+        "id": 25,
+        "restaurant_name": "Meridian",
+        "food_name":"Biriyani",
+        "rating": 3.8,
+        "price": 599,
+        "payment_methods": {
+            "card": true,
+            "cash": true
+        },
+        "costForTwo": 2000
+    },{
+        "id": 14,
+        "restaurant_name": "Burger King",
+        "food_name":"Sandwich",
+        "rating": 3.2,
+        "price": 165,
+        "payment_methods": {
+            "card": true,
+            "cash": true
+        },
+        "costForTwo": 200
+    },{
+        "id": 16,
+        "restaurant_name": "Indian Coffee House",
+        "food_name":"Masala Dosa",
+        "rating": 4.6,
+        "price": 55,
+        "payment_methods": {
+            "card": false,
+            "cash": true
+        },
+        "costForTwo": 150
+    },{
+        "id": 3,
+        "restaurant_name": "Starbucks",
+        "food_name":"Burger",
+        "rating": 4.6,
+        "price": 160,
+        "payment_methods": {
+            "card": true,
+            "cash": false
+        },
+        "costForTwo": 600
+    },{
+        "id": 18,
+        "restaurant_name": "Indian Coffee House",
+        "food_name":"Biriyani",
+        "rating": 4.6,
+        "price": 110,
+        "payment_methods": {
+            "card": false,
+            "cash": true
+        },
+        "costForTwo": 150
+    },{
+        "id": 5,
+        "restaurant_name": "Chic Fil a",
+        "food_name":"Burger",
+        "rating": 2.9,
+        "price": 90,
+        "payment_methods": {
+            "card": true,
+            "cash": false
+        },
+        "costForTwo": 300
+    },{
+        "id": 19,
+        "restaurant_name": "Aaryas",
+        "food_name":"Biriyani",
+        "rating": 3.5,
+        "price": 129,
+        "payment_methods": {
+            "card": false,
+            "cash": true
+        },
+        "costForTwo": 250
+    },{
+        "id": 20,
+        "restaurant_name": "Domino's",
+        "food_name":"Pizza",
+        "rating": 2.5,
+        "price": 159,
+        "payment_methods": {
+            "card": true,
+            "cash": true
+        },
+        "costForTwo": 400
+    },{
+        "id": 22,
+        "restaurant_name": "Domino's",
+        "food_name":"Burger",
+        "rating": 2.5,
+        "price": 75,
+        "payment_methods": {
+            "card": true,
+            "cash": true
+        },
+        "costForTwo": 400
+    },{
+        "id": 31,
+        "restaurant_name": "Worst",
+        "food_name":"Aloo Gobi",
+        "rating": 2.2,
+        "price": 29,
+        "payment_methods": {
+            "card": false,
+            "cash": true
+        },
+        "costForTwo": 100
+    },{
+        "id": 23,
+        "restaurant_name": "Pizza Hut",
+        "food_name":"Burger",
+        "rating": 3,
+        "price": 69,
+        "payment_methods": {
+            "card": true,
+            "cash": true
+        },
+        "costForTwo": 300
+    },{
+        "id": 24,
+        "restaurant_name": "Taj",
+        "food_name":"Biriyani",
+        "rating": 4.5,
+        "price": 899,
+        "payment_methods": {
+            "card": true,
+            "cash": true
+        },
+        "costForTwo": 4000
+    },{
+        "id": 11,
+        "restaurant_name": "Se7en",
+        "food_name":"Sandwich",
+        "rating": 3.9,
+        "price": 130,
+        "payment_methods": {
+            "card": true,
+            "cash": false
+        },
+        "costForTwo": 350
+    },{
+        "id": 27,
+        "restaurant_name": "Worst",
+        "food_name":"Biriyani",
+        "rating": 2.2,
+        "price": 45,
+        "payment_methods": {
+            "card": false,
+            "cash": true
+        },
+        "costForTwo": 100
+    },{
+        "id": 28,
+        "restaurant_name": "Taj",
+        "food_name":"Aloo Gobi",
+        "rating": 4.5,
+        "price": 750,
+        "payment_methods": {
+            "card": true,
+            "cash": true
+        },
+        "costForTwo": 4000
+    },{
+        "id": 13,
+        "restaurant_name": "McDonald's",
+        "food_name":"Sandwich",
+        "rating": 3.8,
+        "price": 129,
+        "payment_methods": {
+            "card": true,
+            "cash": true
+        },
+        "costForTwo": 300
+    },{
+        "id": 29,
+        "restaurant_name": "Meridian",
+        "food_name":"Aloo Gobi",
+        "rating": 3.8,
+        "price": 499,
+        "payment_methods": {
+            "card": true,
+            "cash": true
+        },
+        "costForTwo": 2000
+    },{
+        "id": 6,
+        "restaurant_name": "McDonald's",
+        "food_name":"Burger",
+        "rating": 3.8,
+        "price": 75,
+        "payment_methods": {
+            "card": true,
+            "cash": true
+        },
+        "costForTwo": 300
+    }
+]
