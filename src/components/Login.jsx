@@ -19,7 +19,7 @@ class Login extends Component {
     handleSubmit = e => {
         e.preventDefault();
 
-        const { userDetails, logAdminIn, logUserIn, history } = this.props
+        const { userDetails, logAdminIn, logUserIn, history, userLoggedIn, cart } = this.props
         const { name, password } = this.state
         
         let invalid = true
@@ -30,8 +30,10 @@ class Login extends Component {
                     logAdminIn()
                 else
                     logUserIn()
-
-                history.push('/')
+                if(cart.length)
+                    history.push('/cart')
+                else
+                    history.push('/')
                 invalid = false
             }
         }
@@ -86,7 +88,8 @@ class Login extends Component {
 const mapStateToProps = state => ({
     adminLoggedIn: state.adminLoggedIn,
     userLoggedIn: state.userLoggedIn,
-    userDetails: state.userDetails
+    userDetails: state.userDetails,
+    cart: state.cart
 })
 
 const mapDispatchToProps = dispatch => ({

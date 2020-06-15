@@ -37,19 +37,21 @@ const reducer = (state = initState , { type, payload }) => {
             return {
                 ...state, 
                 userLoggedIn: false,
-                adminLoggedIn: false
+                adminLoggedIn: false,
+                cart: [],
+                selected: {}
             }
         
         case LOG_ADMIN_IN:
             return{
                 ...state,
-                adminLoggedIn: true
+                adminLoggedIn: true,
             }
 
         case LOG_USER_IN:
             return {
                 ...state,
-                userLoggedIn: true
+                userLoggedIn: true,
             }
 
         default:
