@@ -19,7 +19,7 @@ class Login extends Component {
     handleSubmit = e => {
         e.preventDefault();
 
-        const { userDetails, logAdminIn, logUserIn, history, userLoggedIn, cart } = this.props
+        const { userDetails, logAdminIn, logUserIn, history, cart } = this.props
         const { name, password } = this.state
         
         let invalid = true

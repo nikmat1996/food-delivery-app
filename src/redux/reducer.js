@@ -11,7 +11,8 @@ const initState = {
     cart: [],
     userDetails: userdetails,
     carouselData: carouselData,
-    selected: {}
+    selected: {},
+    orderDetails: []
 }
 
 console.log(initState)

@@ -7,7 +7,7 @@ function Header(props) {
     const { userLoggedIn, adminLoggedIn, cart } = props
     
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar sticky='top' collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Navbar.Brand><Link className=" nav-link text-secondary" to="/">FOOD DELIVERY APP</Link></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">

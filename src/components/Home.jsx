@@ -9,7 +9,6 @@ import "./Home.css"
 
 function Home(props) {
     const { data, carouselData, addToCart, selected } = props
-    console.log(props)
     return (
         <Container>
             
@@ -18,7 +17,7 @@ function Home(props) {
                 
                     <Carousel.Item key={item.p}>
                         <img
-                        className="d-block w-100"
+                        className="d-block w-100 fit-image"
                         src={item.img}
                         alt="fruits"
                         />
