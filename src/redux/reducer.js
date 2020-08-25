@@ -4,7 +4,21 @@ import userdetails from '../utils/userdetails.json'
 import data from "../utils/data.json";
 import carouselData from "../utils/carouselData.json";
 
-const initState = {
+
+
+function loadData(key){
+    try{
+        let data = localStorage.getItem(key)
+        data = JSON.parse(data)
+        return data
+    }
+    catch(err){
+        return undefined
+        // important to give initState undefined, if null, then your redux store does not goto the default case in reducer while initialising
+    }
+}
+
+const initState = loadData('state') || {
     data: data,
     userLoggedIn: false,
     adminLoggedIn: false,
@@ -14,6 +28,14 @@ const initState = {
     selected: {},
     orderDetails: []
 }
+
+// to save data we can use a helper function 
+
+function saveData(key, data){
+    localStorage.setItem(key,JSON.stringify(data))
+}
+
+
 
 console.log(initState)
 
