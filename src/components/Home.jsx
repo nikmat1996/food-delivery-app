@@ -1,11 +1,11 @@
-import React from 'react'
-import { connect } from 'react-redux'
+import React from 'react';
+import { connect } from 'react-redux';
 import { Carousel, Card, ListGroup,
          ListGroupItem, Button, Badge,
          Container, Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { addToCart } from '../redux/action'
-import "./Home.css"
+import { addToCart, removeFromCart } from '../redux/action';
+import "./Home.css";
 
 function Home(props) {
     const { data, carouselData, addToCart, selected } = props
@@ -22,8 +22,8 @@ function Home(props) {
                         alt="fruits"
                         />
                         <Carousel.Caption>
-                        <h3 className="text-white-50">{item.h3}</h3>
-                        <p className="text-secondary">{item.p}</p>
+                            <h3 className="text-white-50">{item.h3}</h3>
+                            <p className="text-secondary">{item.p}</p>
                         </Carousel.Caption>
                     </Carousel.Item>
 
@@ -37,16 +37,28 @@ function Home(props) {
                     <Card className=" productCard" style={{ width: '21rem' }}>
                         <Card.Img variant="top" src={item.img} />
                         <ListGroup className="list-group-flush text-center">
-                        <ListGroupItem>{item.food_name.toUpperCase()}
-                            <Badge className="ml-2" variant="secondary">{item.rating}
-                                <i className="far fa-star ml-1"></i>
-                            </Badge>
-                        </ListGroupItem>
-                        <ListGroupItem><i className="fas fa-rupee-sign"></i> {item.price}</ListGroupItem>
+                            <ListGroupItem>{item.food_name.toUpperCase()}
+                                <Badge className="ml-2" variant="secondary">{item.rating}
+                                    <i className="far fa-star ml-1"></i>
+                                </Badge>
+                            </ListGroupItem>
+                            {selected[item.id] ?
+                            <ListGroupItem className="text-success">
+                                <i className="fas fa-rupee-sign"></i>
+                                {item.price * selected[item.id]} 
+                                <i className=" text-danger ml-3 mr-1 fas fa-arrow-down" onClick={() => removeFromCart(item.id)}></i>
+                                {selected[item.id]}
+                            </ListGroupItem>  :
+                            <ListGroupItem><i className="fas fa-rupee-sign"></i> {item.price}</ListGroupItem>}
                         </ListGroup>
                         <Card.Body className="px-0 text-center">
-                        <Button className={selected[item.id] ? "bg-danger mr-3":"mr-3"}variant="secondary" onClick={()=>addToCart(item.id)}>{selected[item.id] ? `Added + ${selected[item.id]}`: "Add to Cart"}</Button>
-                            <Link className="ml-auto text-danger" to={`/${item.restaurant_name}`}>{item.restaurant_name.toUpperCase()}</Link>
+                            <Button className={selected[item.id] ? "bg-success mr-3" : "mr-3"} variant="secondary" onClick={()=>addToCart(item.id)}>
+                                {selected[item.id] ? 'Add More' : "Add to Cart"}
+                            </Button>
+                            <Link className="ml-auto text-danger" to={`/${item.restaurant_name}`}>
+                                {item.restaurant_name.toUpperCase()}
+                            </Link>
+                            
                         </Card.Body>
                     </Card>
                 </Col>
@@ -64,7 +76,8 @@ const mapStateToProps = state => ({
     selected: state.selected
 })
 const mapDispatchToProps = dispatch =>({
-    addToCart: (payload) => dispatch(addToCart(payload))
+    addToCart : payload => dispatch(addToCart(payload)),
+    removeFromCart : payload => dispatch(removeFromCart(payload))
 })
 
 export default connect(mapStateToProps,mapDispatchToProps)(Home)

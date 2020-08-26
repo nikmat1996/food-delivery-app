@@ -1,4 +1,4 @@
-import { ADD_TO_CART, REMOVE_FORM_CART, LOG_OUT, LOG_ADMIN_IN, LOG_USER_IN } from "./actionType";
+import { ADD_TO_CART, REMOVE_FROM_CART, LOG_OUT, LOG_ADMIN_IN, LOG_USER_IN } from "./actionType";
 
 import userdetails from '../utils/userdetails.json'
 import data from "../utils/data.json";
@@ -29,21 +29,12 @@ const initState = loadData('state') || {
     orderDetails: []
 }
 
-// to save data we can use a helper function 
-
-function saveData(key, data){
-    localStorage.setItem(key,JSON.stringify(data))
-}
-
-
-
-console.log(initState)
 
 const reducer = (state = initState , { type, payload }) => {
     switch (type) {
 
         case ADD_TO_CART:
-            if(state.selected[payload])
+            if(payload in state.selected)
                 state.selected[payload]++
             else
                 state.selected[payload] = 1
@@ -53,7 +44,7 @@ const reducer = (state = initState , { type, payload }) => {
                 selected:{...state.selected}
             }
 
-        case REMOVE_FORM_CART:
+        case REMOVE_FROM_CART:
             return { ...state }
 
         case LOG_OUT:

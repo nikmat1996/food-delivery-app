@@ -1,7 +1,6 @@
 import reducer from './reducer';
 import { createStore } from 'redux';
 
-
 const store  = createStore(reducer)
 
 store.subscribe(()=>saveData('state',store.getState()))

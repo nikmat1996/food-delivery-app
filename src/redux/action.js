@@ -1,4 +1,4 @@
-import { ADD_TO_CART, REMOVE_FORM_CART, LOG_OUT, LOG_ADMIN_IN, LOG_USER_IN } from "./actionType";
+import { ADD_TO_CART, REMOVE_FROM_CART, LOG_OUT, LOG_ADMIN_IN, LOG_USER_IN } from "./actionType";
 
 export const addToCart = payload => ({
     type: ADD_TO_CART,
@@ -6,7 +6,7 @@ export const addToCart = payload => ({
 })
 
 export const removeFromCart = payload => ({
-    type: REMOVE_FORM_CART,
+    type: REMOVE_FROM_CART,
     payload
 })
 

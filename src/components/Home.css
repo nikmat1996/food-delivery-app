@@ -1,3 +1,7 @@
+body *{
+	transition: 0.3s;
+}
+
 .productCard{
     margin-right: 0;
     margin-left: 0;
@@ -6,8 +10,12 @@
     border: 2px solid red;
     border-radius: 10%;
 }
+
 .d-block, .w-100{
     border-radius: 1%;
     height: 60vh;
+}   
+
+i:hover {
+    cursor: pointer;
 }
-/* .productCard */
