@@ -31,21 +31,33 @@ const initState = loadData('state') || {
 
 
 const reducer = (state = initState , { type, payload }) => {
+    let { selected, cart } = state 
     switch (type) {
 
         case ADD_TO_CART:
-            if(payload in state.selected)
-                state.selected[payload]++
-            else
-                state.selected[payload] = 1
             return { 
                 ...state,
-                cart: [...state.cart,state.data.find(item => item.id === payload)],
-                selected:{...state.selected}
+                cart: [...cart, state.data.find(item => item.id === payload)],
+                selected:{...selected, [payload] : payload in selected ? selected[payload] + 1 : 1}
             }
 
         case REMOVE_FROM_CART:
-            return { ...state }
+            let newCart =[], found = false;
+            for(let item of state.cart){
+                if(item.id === payload)
+                    if(!found){ 
+                        found = true
+                    } else {
+                        newCart.push(item)
+                    }
+                else
+                    newCart.push(item)
+            }
+            return { 
+                ...state,
+                cart : [...newCart],
+                selected : {...selected, [payload] : selected[payload] - 1}
+            }
 
         case LOG_OUT:
             return {

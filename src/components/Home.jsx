@@ -8,7 +8,7 @@ import { addToCart, removeFromCart } from '../redux/action';
 import "./Home.css";
 
 function Home(props) {
-    const { data, carouselData, addToCart, selected } = props
+    const { data, carouselData, addToCart, selected, removeFromCart } = props
     return (
         <Container>
             
@@ -46,7 +46,7 @@ function Home(props) {
                             <ListGroupItem className="text-success">
                                 <i className="fas fa-rupee-sign"></i>
                                 {item.price * selected[item.id]} 
-                                <i className=" text-danger ml-3 mr-1 fas fa-arrow-down" onClick={() => removeFromCart(item.id)}></i>
+                                <i className=" text-danger ml-4 mr-2 fas fa-arrow-down" onClick={() => removeFromCart(item.id)}></i>
                                 {selected[item.id]}
                             </ListGroupItem>  :
                             <ListGroupItem><i className="fas fa-rupee-sign"></i> {item.price}</ListGroupItem>}
