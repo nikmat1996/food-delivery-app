@@ -1,48 +1,64 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import { Redirect } from 'react-router-dom'
-import { Button } from 'react-bootstrap'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { Redirect } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 
-function Cart(props) {
-    const { userLoggedIn, cart, selected } = props
+
+export class Cart extends Component {
+    constructor(props) {
+        super(props)
     
-    let totalCartValue = 0
-    let uniqueIds = Object.keys(selected)
-    
-    let duplicateSelected = {...selected}
-    for(let cartItem of cart){
-        totalCartValue+= cartItem.price
+        this.state = {
+             
+        }
     }
     
-    console.log(uniqueIds, cart)
+    render() {
 
+        const { userLoggedIn, cart, selected } = this.props
+    
+        let totalCartValue = 0
+        let uniqueIds = Object.keys(selected)
+        
+        let duplicateSelected = {...selected}
+        for(let item of cart){
+            totalCartValue += item.price
+        }
 
-    if(!userLoggedIn)
-        return <Redirect to='/login' />
-    if(!cart.length)
-        return <div>Cart is Empty</div>
-    else return (
-        <>
-            {cart.map(item => {
+        if(!userLoggedIn)
+            return <Redirect to='/login' />
+        if(!cart.length)
+            return <div>Cart is Empty</div>
+        else return(
+            <div>
+                <>
+                    {cart.map(item => {
 
-                if(duplicateSelected[item.id] >= 1){
-                    var n = duplicateSelected[item.id]
-                    duplicateSelected[item.id] = 0
-                return <div>{item.food_name} {n} *{item.price * n}</div>
-                }
-                else
-                return null
-           
-            })}
+                        if(item.id in duplicateSelected){
+                            var n = duplicateSelected[item.id]
+                            delete duplicateSelected[item.id]
+                            return <div>{item.food_name} {n} *{item.price * n}</div>
+                        }
+                        else
+                        return null
+                
+                    })}
 
-            <Button variant="outline-success">Check Out {totalCartValue}</Button>
-        </>
-    )
+                    <Button variant="outline-success">Check Out {totalCartValue}</Button>
+                </>
+            </div>
+        )
+    }
 }
+
 const mapStateToProps = state => ({
     userLoggedIn : state.userLoggedIn,
     cart: state.cart,
     selected: state.selected
 })
+
+const mapDispatchToProps = {
+    
+}
 
 export default connect(mapStateToProps,null)(Cart)

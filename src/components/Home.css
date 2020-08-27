@@ -19,3 +19,9 @@ body *{
 i:hover {
     cursor: pointer;
 }
+
+.cartContainer{
+    margin: 5px auto 5px auto;
+    /* margin-left: 50px; */
+    background-color: aquamarine;
+}
